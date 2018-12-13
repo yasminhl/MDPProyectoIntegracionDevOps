@@ -1,0 +1,67 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  
+  <parent>
+	<artifactId>maven-plugins</artifactId>
+	<groupId>org.apache.maven.plugins</groupId>
+	<version>22</version>
+	<relativePath>../maven-plugins/pom.xml</relativePath>
+  </parent> 
+
+  
+  <groupId>mdp.prueba.ti</groupId>
+  <artifactId>maven_junit_project</artifactId>
+  <packaging>war</packaging>
+  <version>0.0.2</version>
+  <name>maven_junit_project Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+    
+	<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-deploy-plugin -->
+	<dependency>
+	    <groupId>org.apache.maven.plugins</groupId>
+	    <artifactId>maven-deploy-plugin</artifactId>
+	    <version>2.7</version>
+	</dependency>
+
+	<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-remote-resources-plugin -->
+	<dependency>
+	    <groupId>org.apache.maven.plugins</groupId>
+	    <artifactId>maven-remote-resources-plugin</artifactId>
+	    <version>1.2.1</version>
+	</dependency>
+
+	<dependency>
+	    <groupId>org.junit.jupiter</groupId>
+	    <artifactId>junit-jupiter-api</artifactId>
+	    <version>5.0.0-M5</version>
+	    <scope>test</scope>
+	</dependency>
+    
+  </dependencies>
+  <build>
+    <finalName>maven_junit_project</finalName>
+  </build>
+  
+  <distributionManagement>
+	<repository>
+		<id>nexus</id>
+		<name>maven-releases</name>
+		<url>http://54.208.225.203:8081/repository/maven-releases/</url>
+	</repository>
+	<snapshotRepository>
+		<id>nexus</id>
+		<name>maven-snapshots</name>
+		<url>http://54.208.225.203:8081/repository/maven-snapshots/</url>
+	</snapshotRepository>
+   </distributionManagement>
+
+</project>
