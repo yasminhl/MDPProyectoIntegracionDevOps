@@ -13,7 +13,7 @@
   <groupId>mdp.prueba.ti</groupId>
   <artifactId>maven_junit_project</artifactId>
   <packaging>war</packaging>
-  <version>0.0.2</version>
+  <version>0.0.3</version>
   <name>maven_junit_project Maven Webapp</name>
   <url>http://maven.apache.org</url>
   
